@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+header {
+  padding: 10px 5%;
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header > * {
+  display: inline-block;
+  width: 150px;
+}

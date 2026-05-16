@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Jersey+10&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+}
+body {
+  background-image: url("gallery img/moon2.png");
+  background-size: 10% 20%;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+header {
+  height: 72px;
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  flex-direction: row;
+  color: #e0e0e0;
+  background-color: #1a1a2e;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 3px solid #e63946;
+  flex-wrap: wrap;
+}
+header > * {
+  display: inline-block;
+  width: 450px;
+}
+.logo {
+  font-size: 40px;
+}
+#h {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+#img {
+  display: inline-block;
+  margin: 0 20px;
+}
+header a {
+  margin-right: 25px;
+}
+main {
+  font-size: 20px;
+}
+#a {
+  background-image: url("gallery img/220px-Impossible_Voyage_9.jpg");
+  background-attachment: fixed;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.honk-uniquifier {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+}
+.roboto-uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+h2 {
+  font-size: 30px;
+}
+/* ===== FOOTER ===== */
+footer {
+  background-color: #0f0f1a;
+  text-align: center;
+  padding: 25px;
+  border-top: 3px solid #e63946;
+}
+
+footer p {
+  font-family: "Pacifico", cursive;
+  color: #999;
+  font-size: 14px;
+}

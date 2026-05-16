@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Jersey+10&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  font-family: "Roboto", "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ===== ШАПКА ===== */
+header {
+  background-color: #0f0f1a;
+  padding: 15px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #e63946;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  color: #e63946;
+  font-size: 26px;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+header nav a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+header nav a:hover {
+  background-color: #e63946;
+  color: white;
+}
+
+/* ===== MAIN ===== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.page-title {
+  font-family: "Jersey 10", sans-serif;
+  color: #e63946;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+/* ===== БАННЕР (главная) ===== */
+.banner {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.banner-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 26, 0.75);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content h2 {
+  font-family: "Honk", cursive;
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* ===== БЛОК «О ПРОЕКТЕ» (главная) ===== */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 50px;
+  background-color: #16213e;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.about-img {
+  width: 250px;
+  border-radius: 12px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-text h2 {
+  font-family: "Jersey 10", sans-serif;
+  color: #e63946;
+  font-size: 36px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.about-text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* ===== КАРТОЧКИ-РАЗДЕЛЫ (главная) ===== */
+.cards-nav h2 {
+  font-family: "Jersey 10", sans-serif;
+  color: #e63946;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.nav-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #16213e;
+  padding: 0 0 20px 0;
+  border-radius: 15px;
+  width: 240px;
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.nav-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(230, 57, 70, 0.3);
+}
+
+.nav-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.nav-card h3 {
+  font-family: "Jersey 10", sans-serif;
+  color: #e63946;
+  margin: 15px 0 5px 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.nav-card p {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* ===== СТАТЬИ (сюжеты) ===== */
+article {
+  background-color: #16213e;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+article h3 {
+  font-family: "Jersey 10", sans-serif;
+  color: #e63946;
+  font-size: 28px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e63946;
+  padding-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+article p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* ===== ГАЛЕРЕЯ КАДРОВ ===== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #16213e;
+  padding: 15px;
+  border-radius: 12px;
+  width: 280px;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery-card p {
+  font-family: "Pacifico", cursive;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* ===== ВИДЕО ===== */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #16213e;
+  padding: 15px;
+  border-radius: 12px;
+  width: 320px;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.video-card p {
+  font-family: "Pacifico", cursive;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* ===== АФИШИ ===== */
+.posters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.poster-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #16213e;
+  padding: 15px;
+  border-radius: 12px;
+  width: 280px;
+}
+
+.poster-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.poster-card p {
+  font-family: "Pacifico", cursive;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #0f0f1a;
+  text-align: center;
+  padding: 25px;
+  border-top: 3px solid #e63946;
+  margin-top: 50px;
+}
+
+footer p {
+  font-family: "Pacifico", cursive;
+  color: #999;
+  font-size: 14px;
+}
